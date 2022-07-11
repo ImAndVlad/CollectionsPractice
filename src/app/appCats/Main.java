@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     static String address;
+    static List<Cat> cats;
     static int num;
 
     public static void main(String[] args) {
@@ -26,13 +27,14 @@ public class Main {
         Cat cat5 = new Cat(address);
         cat5.name = "Cat5";
 
-        List<Cat> cats = new ArrayList<>();
+        cats = new ArrayList<>();
         cats.add(cat1);
         cats.add(cat2);
         cats.add(cat3);
         cats.add(cat4);
         cats.add(cat5);
 
+        System.out.println("---CATS LIST---");
         System.out.println(cats);
 
         System.out.println(eat(cats));
@@ -52,7 +54,7 @@ public class Main {
             case 1 -> address = "Kyiv";
             case 2 -> address = "Odesa";
             case 3 -> address = "Kharkiv";
-            default -> getNum();
+            default -> eat(cats);
         }
     }
 
@@ -60,7 +62,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("""
                 ---
-                Enter a number to select the city:
+                Enter a number to select the city
                 1 - Kyiv
                 2 - Odesa
                 3 - Kharkiv
