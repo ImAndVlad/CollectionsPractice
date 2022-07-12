@@ -1,4 +1,4 @@
-package app.appCats;
+package apps.appCats;
 
 public class Cat {
 

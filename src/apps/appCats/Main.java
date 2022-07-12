@@ -1,4 +1,4 @@
-package app.appCats;
+package apps.appCats;
 
 import java.util.ArrayList;
 import java.util.List;

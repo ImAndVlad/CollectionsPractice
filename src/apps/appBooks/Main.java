@@ -1,4 +1,4 @@
-package app.appBooks;
+package apps.appBooks;
 
 import java.util.*;
 
