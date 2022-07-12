@@ -2,11 +2,15 @@ package apps.appCars.models;
 
 public class Driver {
 
-    String name;
+    public String name;
     public int age;
+    public String licence;
+    public int fine;
 
-    public Driver(String name, int age) {
-        this.name = name;
-        this.age = age;
+
+    @Override
+    public String toString() {
+        return "\nDriver name: " + name + " Age: " + age +
+                " Driver's licence: " + licence + " Driver's fine " + fine;
     }
 }

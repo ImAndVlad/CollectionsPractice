@@ -1,10 +1,12 @@
 package apps.appCars.base;
 
+import apps.appCars.models.Driver;
+
 public interface Audit {
 
-    boolean driversLicense(int age);
+    boolean driversLicense(Driver driver);
 
-    boolean passport(int age);
+    boolean passport(Driver driver);
 
-    boolean driversFine(int age);
+    boolean driversFine(Driver driver);
 }
