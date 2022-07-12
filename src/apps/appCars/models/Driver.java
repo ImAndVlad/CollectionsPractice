@@ -7,6 +7,12 @@ public class Driver {
     public String licence;
     public int fine;
 
+    public Driver(String name, int age, String licence, int fine) {
+        this.name = name;
+        this.age = age;
+        this.licence = licence;
+        this.fine = fine;
+    }
 
     @Override
     public String toString() {
